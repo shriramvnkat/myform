@@ -1,0 +1,44 @@
+html, body{
+	margin: 0 auto;
+}
+.divleftcontainter{
+	width: 60%;
+	background: white;
+	float: left;
+	margin-top: 100px;
+	margin-bottom:50px;
+	margin-right:50px;
+	height: 100%;
+    position: absolute;
+}
+.divrightcontainer{
+	margin-top: 100px;
+	width: 40%;
+	float: right;
+}
+.rowcustom{
+	margin-top: 50px;
+}
+.navbar {
+    background: blue;
+    border: none;
+}
+.navbar-inverse .navbar-nav>li>a, .navbar-inverse .navbar-brand{
+	color: #fff;
+}
+header {
+	margin-top:-20px;
+	background-color:white;
+	color:white;
+	height:100px;
+
+    }
+ .divform
+ {
+ 	background-color: white;
+ 	margin-top: 100px;
+ }
+ .siginleftcontainer
+ {
+ 	width: 50%;
+ }

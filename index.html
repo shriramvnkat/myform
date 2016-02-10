@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app.js">
+<head>
+  <title>Sign-Up</title>
+	  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="style.css">  
+</head>
+<body ng-app="mainmodule">
+  <div class="container-fulid">
+  	<nav class="navbar navbar-inverse navbar-fixed-top">
+	  <div class="container-fluid">
+	    <div class="navbar-header">
+	      <a class="navbar-brand" href="#">Registration form</a>
+	    </div>
+	    <ul class="nav navbar-nav">
+	      <li><a href="/"></a></li>
+	      <li><a href="recent.html">Recent</a></li>
+	      <li><a href="contact.html">contact</a></li> 
+	    </ul>
+	    <ul class="nav navbar-nav navbar-right">
+	      <li><a href="#"><span class="glyphicon glyphicon-user"></span> Help</a></li>
+	      <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+	    </ul>
+	  </div>
+	</nav>	
+  </div>
+   <div class="container divleftcontainter">
+   <p class="text-center">
+  </p>
+<form class="form-horizontal" ng-controller="MyCtrl1" name="form"novalidate>
+  	<div class="form-group">
+  		<label class="control-label col-md-2" for="firstname">First name: </label>
+  			<div class="col-md-5">
+  				<input type="text" class="form-control" id="firstname" name="firstname" placeholder="firstname" ng-model="firstname.formInfo.firstname"required>
+  			</div>
+  	</div>
+  	<div class="form-group">
+  		<label class="control-label col-md-2" for="lastname">Last name: </label>
+  			<div class="col-md-5">
+  				<input type="text" class="form-control" id="lastname" placeholder="lastname" ng-model="lastname.formInfo.lastname"required>
+  			</div>
+  	</div>
+  	<div class="form-group">
+  		<label class="control-label col-md-2" for="dateofbirth">Date Of Birth:</label>
+  		<div class="col-md-5"><input type="date" name="dob" class="form-control" ng-model="dob.formInfo.date"required></div>
+  	</div>
+  	<div class="form-group">
+  		<label class="control-label col-md-2" for="email">Email-ID: </label>
+  			<div class="col-md-5">
+  				<input type="email" class="form-control" name="email" id="email-id" placeholder="Email(or)phone" ng-model="email.formInfo.email"required>
+  			</div>
+  	</div>
+  	<div class="form-group">
+  		<label class="control-label col-md-2" for="email">Password:</label>
+  			<div class="col-md-5">
+  				<input type="password" class="form-control" id="pwd" name="pass" placeholder="password" ng-model="pass.formInfo.pass"required>
+  			</div>
+  	</div>
+  	<div class="form-group">
+  		<label class="control-label col-md-2" for="email">Confirm Password: </label>
+  			<div class="col-md-5">
+  				<input type="password" class="form-control" id="pwd1" placeholder="Confirm password" required>
+  			</div>
+  	</div>
+  	<div class="row rowcustom">
+  		<div class="col-sm-6">
+  			<button type="button" class="btn btn-primary pull-right" ng-disabled="form.$invalid" >Submit </button>
+  		</div>
+  		<div class="row">
+  		<div class="col-sm-6">
+  			<button type="button" class="btn btn-primary" ng-click="resetform()">Reset </button>
+  		</div>
+  	</div>
+  	</div>
+    </div>
+    </form>
+    <div class=" container-fulid divrightcontainer">
+    <img src="google.jpg" class="img-responsive" alt="go" width="250" height="250">
+    </div>
+  	</html>
